@@ -1,0 +1,145 @@
+.columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.column {
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+  
+.main-column {
+    flex: 2; 
+}
+
+.article {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto; 
+    justify-content: center;
+    align-items: center;
+}  
+.article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+   
+.article-content {
+    flex: 1;
+}
+  
+.article-info {
+    display: flex;
+    justify-content: space-between;
+}
+.mapa{
+    width:600 ;
+    height:450;
+    border:0 
+}
+.perfil{
+    width: auto;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+}
+.secondaryContainer{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family:'Quicksand';
+    font-size: 28px;
+}
+a,ul{
+    font-family:'Ek Mukta';
+    font-size: 24px;
+}
+.ul-bod{
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .columns,
+    .column {
+      display: flex;
+    }
+  
+    .columns {
+      flex-direction: column;
+    }
+}
+
+.secondaryContainer .boton{
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #eef0f2 ;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);   
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.secondaryContainer .boton:hover{
+    width: 200px;
+}
+
+.secondaryContainer .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.secondaryContainer .boton:nth-child(1):hover .icono{
+    color: #eef0f2;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+}
+.secondaryContainer .boton img{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.secondaryContainer .boton span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.social a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+.video{
+    width:475px;
+    height:300px;
+
+}

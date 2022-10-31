@@ -1,0 +1,29 @@
+body{
+    background: #5e5d5c;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 20px;
+}
+.secondaryContainer{
+    border-radius: 5%;
+    background: #daddd8;
+}
+
+table.default td {
+    padding: 0.2em 0.8em;
+    border: 1px solid rgba(16,76,167,.25);
+    background: #ecebe4;
+    text-align: left;
+    border-radius: 15%;
+    font-size: 24px;
+}
+
+.default td:hover,
+.default td:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #444;
+}
+

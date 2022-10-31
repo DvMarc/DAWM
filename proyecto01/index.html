@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 DAWM</title>
+    <link rel="stylesheet" href="public/stylesheets/layout.css">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ek Mukta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+</head>
+    <body>
+        <main class="main columns">
+            <section class="column main-columns">
+                <article class="article"> 
+                    <figure class="article-image">
+                        <img class="perfil" src="public/perfil.jpg" alt="">
+                    </figure>
+                    <a><h2>Nombre</h2></a>
+                    <a>Marcillo Pilay Rommel David</a>
+                    <a><h2>Edad</h2></a>
+                    <a>21 años</a>
+                    <a><h2>Ocupacion</h2></a>
+                    <a>Espol/Estudiante</a>
+                    <br>
+                    <a><h2>Redes Sociales</h2></a>
+                    <div class="social">
+                        <a href="https://www.youtube.com/channel/UCb3xIZ9SDGTmpxaH-PKLg4g"><i class="fa fa-youtube-play"></i></a> 
+                        <a href="https://github.com/DvMarc"><i class="fa fa-github"></i></a> 
+                    </div>
+                    <a><h2>Localizacion</h2></a>
+                    <iframe clas= "mapa"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3986.7296611407146!2d-79.88802008524466!3d-2.254623798356697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMTUnMTYuNyJTIDc5wrA1MycwOS4wIlc!5e0!3m2!1ses!2sec!4v1666893374516!5m2!1ses!2sec"></iframe>
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('login') }}">
+                        <div class="div-form">
+                            <h2>Contactame</h2>
+                        </div>
+                        <div>
+                            <div class="div-form2">
+                                <label>Nombre</label>
+                        </div>
+                            <div>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </div>
+                        <div >
+                            <div class="div-form2">
+                                <label>Email</label>
+                            </div>
+                            <div>
+                                <input type="text" name="email">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="div-form2">
+                                <label>Mensaje</label><br>
+                            </div>
+                            <textarea></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section class="info">
+                <article class="secondaryContainer">
+                        <a><h2><i class="fa fa-user"></i> Educacion</h2></a>
+                        <ul>
+                            <li>Bachillerato en ciencias de la Republica del Ecuador
+                                <br>Unidad Educativa Fiscal Vicente Rocafuerte</br>
+                            </li>
+                            <li>Estudiante de la carrera ingieneria en computacion
+                                <br>Escuela Superior Politecnica del Litoral</br>
+                            </li>
+                          </ul>
+                        <a><h2><i class="fa fa-briefcase"></i> Habilidades</h2></a>
+                            <div class="boton">
+                                <div class="icono">
+                                    <img class="icon" src="public/piton.png" alt=""></figure></div>
+                                    <span>PYTHON</span>
+                            </div>
+                            <div class="boton">
+                                <div class="icono">
+                                    <img class="icon" src="public/java.png" alt=""></figure></div>
+                                    <span>JAVA</span>
+                            </div>
+                            <div class="boton">
+                                <div class="icono">
+                                    <img class="icon" src="public/nodejs.png" alt=""></figure></div>
+                                    <span>NODEJS</span>
+                            </div>
+                        <a><h2><i class="fa fa-language"></i> Idiomas</h2></a>
+                        <table class="default">
+                            <tr>                          
+                                <td>Idioma</td>                          
+                                <td>Nivel</td>
+                            </tr>
+                            <tr>                          
+                                <td>Español</td>                          
+                                <td>Nativo</td>                          
+                            </tr>
+                            <tr>                          
+                                <td>Ingles</td>                          
+                                <td>B2</td>                          
+                            </tr>
+                          </table>
+                          <a><h2>Mi video favorito</h2></a>
+                          <iframe class="video" src="https://www.youtube.com/embed/RRg38oNQ9vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+            </section>
+        </main> 
+    </body>
+</html>
