@@ -34,15 +34,15 @@ let cargarTabla = () => {
 
 let select = document.getElementsByClassName('opcionTamanio')[0]
 select.addEventListener('change', (event) => {
-    actualizar(event.target.value)
+    actualizarTamanio(event.target.value)
 })
 
 let select1 = document.getElementsByClassName('opcionTipo')[0]
 select1.addEventListener('change', (event) => {
-    actualizar(event.target.value)
+    actualizarTipo(event.target.value)
 })
 
-let actualizar = (valor) =>{
+let actualizarTamanio = (valor) =>{
     let tabla = document.getElementsByClassName("tabla")[0]
     tabla.innerHTML = ""
     if(valor=="Todo"){
@@ -58,8 +58,41 @@ let actualizar = (valor) =>{
         }
         return;   
     }
+
     for (let i = 0; i < datos.length; ++i){
         if(valor==datos[i][2]){
+            tabla.innerHTML +=`<tr>
+            <th>${datos[i][0]}</th>
+            <th>${datos[i][1]}</th>
+            <th>${datos[i][2]}</th>
+            <th>${datos[i][3]}</th>
+            <th>${datos[i][4]}</th>
+            <th>${datos[i][5]}</th>
+            </tr>`
+        }
+    }
+    
+}
+
+let actualizarTipo = (valor) =>{
+    let tabla = document.getElementsByClassName("tabla")[0]
+    tabla.innerHTML = ""
+    if(valor=="Todo"){
+        for (let i = 0; i < datos.length; ++i){
+            tabla.innerHTML +=`<tr>
+            <th>${datos[i][0]}</th>
+            <th>${datos[i][1]}</th>
+            <th>${datos[i][2]}</th>
+            <th>${datos[i][3]}</th>
+            <th>${datos[i][4]}</th>
+            <th>${datos[i][5]}</th>
+            </tr>`
+        }
+        return;   
+    }
+
+    for (let i = 0; i < datos.length; ++i){
+        if(valor==datos[i][1]){
             tabla.innerHTML +=`<tr>
             <th>${datos[i][0]}</th>
             <th>${datos[i][1]}</th>
