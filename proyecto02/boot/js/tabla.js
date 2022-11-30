@@ -6,7 +6,7 @@ let llamarDatos = () => {
         .then(response => response.json())
         .then( async json => {
             let opciones = json["mounstros"];
-            for (let i = 0; i < json["resultados"]; ++i){
+            for (let i = 0; i < 25; ++i){
                 await fetch(api+opciones[i]["url"])
                 .then(response => response.json())
                 .then(data =>{
@@ -18,9 +18,15 @@ let llamarDatos = () => {
         })
 }
 
-let cargarTabla = () => {
+let input = document.getElementById('number')
+input.addEventListener("change",(event)=>{
+    let cantidad = input.value
+    cargarTabla(cantidad)
+})
+let cargarTabla = (cantidad) => {
     let tabla = document.getElementsByClassName("tabla")[0]
-    for (let i = 0; i < datos.length; ++i){
+    tabla.innerHTML = ""
+    for (let i = 0; i < cantidad; ++i){
             tabla.innerHTML +=`<tr>
             <th>${datos[i][0]}</th>
             <th>${datos[i][1]}</th>
@@ -106,6 +112,34 @@ let actualizarTipo = (valor) =>{
     
 }
 
+let buscar = () =>{
+    document.addEventListener("keyup",e=>{
+        let tabla = document.getElementsByClassName("tabla")[0]
+        tabla.innerHTML = ""
+        if(e.target.matches("#name")){
+            if(e.key === "Escape"){
+                e.target.value=""
+                tabla.innerHTML =""
+                actualizarTipo("Todo")
+            }
+            for (let i=0; i<datos.length; i++){
+                let palabra1 = datos[i][0].toLowerCase()
+                if(palabra1.indexOf(e.target.value.toLowerCase())!=-1){
+                    tabla.innerHTML += `<tr>
+                    <th>${datos[i][0]}</th>
+                    <th>${datos[i][1]}</th>
+                    <th>${datos[i][2]}</th>
+                    <th>${datos[i][3]}</th>
+                    <th>${datos[i][4]}</th>
+                    <th>${datos[i][5]}</th>
+                    </tr>`
+                }
+            }
+        }   
+    })
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
     llamarDatos()
+    buscar()
 });
