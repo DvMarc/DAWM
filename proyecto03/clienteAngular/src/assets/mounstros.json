@@ -1,0 +1,152 @@
+[
+    {
+        "index": "aboleth",
+        "name": "Aboleth",
+        "url": "/api/monsters/aboleth"
+    },
+    {
+        "index": "acolyte",
+        "name": "Acolyte",
+        "url": "/api/monsters/acolyte"
+    },
+    {
+        "index": "adult-black-dragon",
+        "name": "Adult Black Dragon",
+        "url": "/api/monsters/adult-black-dragon"
+    },
+    {
+        "index": "air-elemental",
+        "name": "Air Elemental",
+        "url": "/api/monsters/air-elemental"
+    },
+    {
+        "index": "ancient-black-dragon",
+        "name": "Ancient Black Dragon",
+        "url": "/api/monsters/ancient-black-dragon"
+    },
+    {
+        "index": "animated-armor",
+        "name": "Animated Armor",
+        "url": "/api/monsters/animated-armor"
+    },
+    {
+        "index": "ankheg",
+        "name": "Ankheg",
+        "url": "/api/monsters/ankheg"
+    },
+    {
+        "index": "ape",
+        "name": "Ape",
+        "url": "/api/monsters/ape"
+    },
+    {
+        "index": "archmage",
+        "name": "Archmage",
+        "url": "/api/monsters/archmage"
+    },
+    {
+        "index": "assassin",
+        "name": "Assassin",
+        "url": "/api/monsters/assassin"
+    },
+    {
+        "index": "awakened-shrub",
+        "name": "Awakened Shrub",
+        "url": "/api/monsters/awakened-shrub"
+    },
+    {
+        "index": "awakened-tree",
+        "name": "Awakened Tree",
+        "url": "/api/monsters/awakened-tree"
+    },
+    {
+        "index": "axe-beak",
+        "name": "Axe Beak",
+        "url": "/api/monsters/axe-beak"
+    },
+    {
+        "index": "crocodile",
+        "name": "Crocodile",
+        "url": "/api/monsters/crocodile"
+    },
+    {
+        "index": "dryad",
+        "name": "Dryad",
+        "url": "/api/monsters/dryad"
+    },
+    {
+        "index": "earth-elemental",
+        "name": "Earth Elemental",
+        "url": "/api/monsters/earth-elemental"
+    },
+    {
+        "index": "goblin",
+        "name": "Goblin",
+        "url": "/api/monsters/goblin"
+    },
+    {
+        "index": "mimic",
+        "name": "Mimic",
+        "url": "/api/monsters/mimic"
+    },
+    {
+        "index": "warhorse",
+        "name": "Warhorse",
+        "url": "/api/monsters/warhorse"
+    },
+    {
+        "index": "water-elemental",
+        "name": "Water Elemental",
+        "url": "/api/monsters/water-elemental"
+    },
+    {
+        "index": "weasel",
+        "name": "Weasel",
+        "url": "/api/monsters/weasel"
+    },
+    {
+        "index": "wight",
+        "name": "Wight",
+        "url": "/api/monsters/wight"
+    },
+    {
+        "index": "will-o-wisp",
+        "name": "Will-o'-Wisp",
+        "url": "/api/monsters/will-o-wisp"
+    },
+    {
+        "index": "winter-wolf",
+        "name": "Winter Wolf",
+        "url": "/api/monsters/winter-wolf"
+    },
+    {
+        "index": "wolf",
+        "name": "Wolf",
+        "url": "/api/monsters/wolf"
+    },
+    {
+        "index": "worg",
+        "name": "Worg",
+        "url": "/api/monsters/worg"
+    },
+    {
+        "index": "wraith",
+        "name": "Wraith",
+        "url": "/api/monsters/wraith"
+    },
+    {
+        "index": "xorn",
+        "name": "Xorn",
+        "url": "/api/monsters/xorn"
+    },
+    {
+        "index": "young-black-dragon",
+        "name": "Young Black Dragon",
+        "url": "/api/monsters/young-black-dragon"
+    },
+    {
+        "index": "zombie",
+        "name": "Zombie",
+        "url": "/api/monsters/zombie"
+    }
+]

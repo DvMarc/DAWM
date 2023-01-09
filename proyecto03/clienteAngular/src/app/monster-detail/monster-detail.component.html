@@ -1,0 +1,174 @@
+<div class="col mb-5">
+  <div class="card-monster h-100">
+    <div class="card-body p-4">
+      <div>
+        <div class="text-center">
+          <h2>{{ mounstro.name }}</h2>
+        </div>
+        <img
+          class="card-img-top"
+          src=".\assets\img\{{ mounstro.index }}.png"
+          alt="..."
+        />
+        <div class="contenedor-tabla">
+          <table class="justify-content-center table-info table-bordered table-responsive justify-content-center">
+            <tbody>
+              <tr>
+                <td>Size</td>
+                <td>{{ mounstro.size }}</td>
+              </tr>
+              <tr>
+                <td>Type</td>
+                <td>{{ mounstro.type }}</td>
+              </tr>
+              <tr>
+                <td>Alignment</td>
+                <td>{{ mounstro.alignment }}</td>
+              </tr>
+              <tr>
+                <td>Armor Class</td>
+                <td>{{ mounstro.armor_class }}</td>
+              </tr>
+              <tr>
+                <td>Hit Points</td>
+                <td>{{ mounstro.hit_points }}</td>
+              </tr>
+              <tr>
+                <td>Hit Dice</td>
+                <td>{{ mounstro.hit_dice }}</td>
+              </tr>
+              <tr>
+                <td>Strength</td>
+                <td>{{ mounstro.strength }}</td>
+              </tr>
+              <tr>
+                <td>Dexterity</td>
+                <td>{{ mounstro.dexterity }}</td>
+              </tr>
+              <tr>
+                <td>Constitution</td>
+                <td>{{ mounstro.constitution }}</td>
+              </tr>
+              <tr>
+                <td>Intelligence</td>
+                <td>{{ mounstro.intelligence }}</td>
+              </tr>
+              <tr>
+                <td>Wisdom</td>
+                <td>{{ mounstro.wisdom }}</td>
+              </tr>
+              <tr>
+                <td>Charisma</td>
+                <td>{{ mounstro.charisma }}</td>
+              </tr>
+              <tr>
+                <td>Languages</td>
+                <td>{{ mounstro.languages }}</td>
+              </tr>
+              <tr>
+                <td>Challenge Rating</td>
+                <td>{{ mounstro.challenge_rating }}</td>
+              </tr>
+              <tr>
+                <td>XP</td>
+                <td>{{ mounstro.xp }}</td>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Actions</h3>
+          <div *ngIf="mounstro.actions.length > 0; else no;">
+            <ul>
+              <li *ngFor="let action of mounstro.actions">
+                <h4>{{ action.name }}</h4>
+                <p>{{ action.desc }}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no>
+            <p>No actions</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Special Abilities</h3>
+          <div *ngIf="mounstro.special_abilities.length > 0; else no1;">
+            <ul>
+              <li *ngFor="let special of mounstro.special_abilities">
+                <h4>{{ special.name }}</h4>
+                <p>{{ special.desc }}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no1>
+            <p>No special abilities</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Legendary Actions</h3>
+          <div *ngIf="mounstro.legendary_actions.length > 0; else no2;">
+            <ul>
+              <li *ngFor="let legendary of mounstro.legendary_actions">
+                <h4>{{ legendary.name }}</h4>
+                <p>{{ legendary.desc }}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no2>
+            <p>No legendary actions</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Damage Vulnerabilities</h3>
+          <div *ngIf="mounstro.damage_vulnerabilities.length > 0; else no3;">
+            <ul>
+              <li *ngFor="let damage of mounstro.damage_vulnerabilities">
+                <p>{{damage}}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no3>
+            <p>No damage vulnerabilities</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Damage Resistances</h3>
+          <div *ngIf="mounstro.damage_resistances.length > 0; else no4;">
+            <ul>
+              <li *ngFor="let damage of mounstro.damage_resistances">
+                <p>{{damage}}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no4>
+            <p>No damage resistances</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Damage Immunities</h3>
+          <div *ngIf="mounstro.damage_immunities.length > 0; else no5;">
+            <ul>
+              <li *ngFor="let damage of mounstro.damage_immunities">
+                <p>{{damage}}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no5>
+            <p>No damage immunities</p>
+          </ng-template>
+        </div>
+        <div>
+          <h3>Condition Immunities</h3>
+          <div *ngIf="mounstro.condition_immunities.length > 0; else no6;">
+            <ul>
+              <li *ngFor="let condition of mounstro.condition_immunities">
+                <p>{{condition.name}}</p>
+              </li>
+            </ul>
+          </div>
+          <ng-template #no6>
+            <p>No condition immunities</p>
+          </ng-template>
+        </div>
+    </div>
+  </div>
+</div>
