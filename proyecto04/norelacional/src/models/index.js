@@ -1,0 +1,1 @@
+module.exports.Factura = require('./factura.model');
